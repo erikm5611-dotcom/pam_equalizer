@@ -49,8 +49,8 @@ def run_one(dataset_file, model_type, input_dim): # one complete run of MLP or K
 
 def main():
     # sweep settings
-    Ls = [ 0.1, 1.0, 2.0]          # 10 points from 0.1km to 2km
-    Ws = [3, 5]                         # WINDOW_HALF choices
+    Ls = [ 0.1]          # 10 points from 0.1km to 2km
+    Ws = [3]                         # WINDOW_HALF choices
     models = ["MLP", "KAN"]
 
     os.makedirs("datasets", exist_ok=True)
